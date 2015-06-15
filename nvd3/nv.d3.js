@@ -9735,7 +9735,7 @@ nv.models.scatter = function() {
                 .style('fill', function (d,i) { return d.color })
                 .style('stroke', function (d,i) { return d.color })
                 .attr('transform', function(d,i) {
-					console.log(d[0]);
+					console.log("d[0]="+d[0]+" d[1]="+d[1]);
                     return 'translate(' + x0(getX(d,i)) + ',' + y0(getY(d,i)) + ')'
                 })
                 .attr('d',
